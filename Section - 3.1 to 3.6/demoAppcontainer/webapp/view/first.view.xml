@@ -1,0 +1,30 @@
+<mvc:View controllerName="demo.splitCont.demoAppcontainer.controller.first" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<SplitApp id="shell">
+		<masterPages>
+			<Page id="pageMaster1" title="Master1">
+				<content>
+					<Button text="Master 1" press="onClickM1"/>
+				</content>
+			</Page>
+			<Page id="pageMaster2" title="Master2" showNavButton="true" navButtonPress="onPressMasterBack">
+				<content>
+					<Button text="Master 2" press="onClickM2"/>
+				</content>
+			</Page>
+		</masterPages>
+		<detailPages id="app">
+			<Page id="pageDetail1" title="Detail1">
+				<content>
+					<Button text="Detail 1" press="onClickD1"/>
+				</content>
+			</Page>
+			<Page id="pageDetail2" title="Detail2" 
+					showNavButton="true"
+					navButtonPress="onPressDetailBack">
+				<content>
+					<Button text="Detail 2" press="onClickD2"/>
+				</content>
+			</Page>
+		</detailPages>
+	</SplitApp>
+</mvc:View>

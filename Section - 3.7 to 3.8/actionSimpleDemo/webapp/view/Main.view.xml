@@ -1,0 +1,18 @@
+<mvc:View controllerName="demo.action.simple.actionSimpleDemo.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Button type="Transparent" press="onPressButton" text="Go To Button"/>
+						<Button type="Transparent" press="onPressBreadcrumbs" text="Go To BreadCrumbs"/>
+						<Button type="Transparent" press="onPressLinkExample" text="Links Examples"/>
+						<Button type="Transparent" press="onPressMenuExample" text="Menu Examples"/>
+						<Button type="Transparent" press="onPressURLHelperExample" text="URL Helper Examples"/>
+						<Button type="Transparent" press="onPressActionSheetExample" text="Action Sheet Examples"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

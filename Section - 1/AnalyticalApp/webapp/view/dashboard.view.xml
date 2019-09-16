@@ -1,0 +1,46 @@
+<mvc:View controllerName="dev.demo.AnalyticalApp.controller.dashboard" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:su="sap.suite.ui.commons" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:table="sap.ui.table" xmlns:viz.data="sap.viz.ui5.data" class="sapUiSizeCompact"
+	xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="3 Month KPI Analytics">
+				<content>
+					<l:Grid defaultSpan="L4 M4 S4" class="sapUiSmallMarginTop">
+						<l:content >
+							<HBox items="{demo_data>/tilesPrediction}">
+								<items >
+									<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout itemTile" header="{demo_data>header}" subheader="{demo_data>subheader}" press="press">
+										<TileContent unit="{demo_data>unit}" footer="{demo_data>footer}">
+											<NumericContent scale="{demo_data>scale}" value="{demo_data>value}" valueColor="{demo_data>valueColor}" indicator="{demo_data>indicator}"/>
+										</TileContent>
+									</GenericTile>
+								</items>
+							</HBox>
+							<su:ChartContainer id="RES" showFullScreen="true" class="chartC" showPersonalization="false" autoAdjustHeight="false" showZoom="false"
+								title="demo">
+								<su:content >
+									<su:ChartContainerContent >
+										<su:content>
+											<viz:VizFrame id="VF" width="100%" class="chartC" vizType='stacked_column'
+												vizProperties="{path:'demo_data>/vizproperties',formatter:'.vizPropertyFormatter'}"
+												feeds="{path:'demo_data>/feeds',templateShareable:false,factory:'.feedsFactory'}">
+												<viz:dataset >
+													<viz.data:FlattenedDataset data="{demo_data>/data}" measures="{path:'demo_data>/measures',factory:'.measuresFactory'}"
+														dimensions="{path:'demo_data>/dimensions',factory:'.dimsFactory'}"></viz.data:FlattenedDataset>
+												</viz:dataset>
+											</viz:VizFrame>
+										</su:content>
+									</su:ChartContainerContent>
+								</su:content>
+								<su:layoutData>
+									<l:GridData span="L12 M12 S12"/>
+								</su:layoutData>
+							</su:ChartContainer>
+						</l:content>
+					</l:Grid>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

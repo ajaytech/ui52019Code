@@ -1,0 +1,20 @@
+<mvc:View controllerName="demo.uploader.collection.demoSAPUI5Uploader.controller.first" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<UploadCollection 
+						id="UploadCollection"
+						instantUpload="false"
+						uploadUrl="http://localhost:3000/api/photo">
+							<items></items>
+						</UploadCollection>
+						<Button text="Upload" press="onPressUpload"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

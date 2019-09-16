@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" 
+
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:dnd="sap.ui.core.dnd"
+xmlns="sap.m" controllerName="demo.dd.table.demoDragDrop.controller.from"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Table id="idTableFrom" growing="true" mode="SingleSelectMaster" 
+	items="{
+	path:'/ProductCollection',
+	filters:{path:'Rank',operator:'EQ',value1:'0'}
+	}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Available Products"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column >
+				<Text text="Product Name"/>
+			</Column>
+			<Column >
+				<Text text="Category"/>
+			</Column>
+			<Column hAlign="End" width="6rem">
+				<Text text="Quantity"/>
+			</Column>
+		</columns>
+		<dragDropConfig>
+			<dnd:DragInfo
+			groupName="from2to"
+			sourceAggregation="items">
+			</dnd:DragInfo>	
+			<dnd:DropInfo
+				groupName="selected2available"
+				drop="onDropAvailableProductsTable" />
+		
+		</dragDropConfig>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{Name}" wrapping="false"/>
+					<Text text="{Category}" wrapping="false"/>
+					<Text text="{ path: 'Quantity', type: 'sap.ui.model.type.Integer' }"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

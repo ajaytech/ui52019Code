@@ -1,0 +1,16 @@
+<mvc:View controllerName="demo.dd.table.demoDragDrop.controller.main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" enableScrolling="true" title="Drag and Drop Example">
+					<content>
+						<HBox>
+							<mvc:XMLView id="fromView" viewName="demo.dd.table.demoDragDrop.view.from"/>
+							<mvc:XMLView id="toView" viewName="demo.dd.table.demoDragDrop.view.to"/>
+						</HBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

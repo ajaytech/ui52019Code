@@ -1,0 +1,32 @@
+<mvc:View controllerName="demo.tiles.basic.demoTilesBasic.controller.first" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" 
+				title="{i18n>title}">
+					<content>
+						<FlexBox wrap="Wrap"
+						items="{/}">
+								<GenericTile
+									header="{header}"
+									subheader="{subheader}"
+									press="onPress">
+									<TileContent>
+										<VBox>
+											<items>
+												<RatingIndicator
+													maxValue="5"
+													value="{ratingValue}">
+												</RatingIndicator>
+												<Label text="Rating"/>
+											</items>
+										</VBox>	
+									</TileContent>
+								</GenericTile>
+						</FlexBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

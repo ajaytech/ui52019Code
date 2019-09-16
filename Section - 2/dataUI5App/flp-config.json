@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "demo.ui5.dataUI5App.dataUI5App",
+        "description": "demo Desc",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#dataUI5App-Display",
+        "navigationComponentName": "demo.ui5.dataUI5App",
+        "intentSemanticObject": "dataUI5App",
+        "intentAction": "Display",
+        "html5ApplicationName": "dataui5app",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "5df8b5ce-4525-4e86-9e7c-c8c4df2f37dd"
+        ],
+        "contentPackages": [
+            "4884de54-9da5-4a76-af4d-415593eb8111"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Approve Demo",
+        "subtitle": "Some Text",
+        "searchKeywords": "Approve Demo,Some Text",
+        "displayIconUrl": "sap-icon://accept",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

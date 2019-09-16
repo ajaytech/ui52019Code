@@ -1,0 +1,13 @@
+<mvc:View controllerName="demo.ui5route.demoRouting.controller.FirstView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="First">
+					<content>
+						<Button text="goToSecondPage" press="onPress"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

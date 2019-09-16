@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="demo.action.simple.actionSimpleDemo.controller.breadcrumbs" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<Breadcrumbs currentLocationText="Laptop">
+						<Link press="onPress" text="Products"/>
+						<Link press="onPress" text="Suppliers"/>
+						<Link press="onPress" text="Titanium"/>
+						<Link press="onPress" text="Ultra portable"/>
+						<Link press="onPress" text="12 inch"/>
+						<Link press="onPress" text="Super portable deluxe"/>
+					</Breadcrumbs>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

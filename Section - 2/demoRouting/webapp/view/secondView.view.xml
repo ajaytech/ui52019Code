@@ -1,0 +1,12 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="demo.ui5route.demoRouting.controller.secondView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Second">
+				<content>
+						<Button text="Back" press="onBack"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,142 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "demo.route.demoRouteList",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "/V2/northwind/northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "demo.route.demoRouteList.view.first",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "demo.route.demoRouteList.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "mainService",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "demo.route.demoRouteList.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false,
+				"bypassed": {
+					"target":"NotFound"
+				}
+			},
+			"routes": [
+				{
+					"name": "Routefirst",
+					"pattern": "",
+					"target": "Targetfirst"
+				},
+				{
+					"name": "secondPage",
+					"pattern": "second/{productID}",
+					"target": "second"
+				},
+				{
+					"name": "detailPage",
+					"target": "detailTab",
+					"pattern": "second/{productID}/detail:?query:"
+				}
+			],
+			"targets": {
+				"Targetfirst": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "first",
+					"viewName": "first"
+				},
+				"second": {
+					"viewType": "XML",
+					"viewName": "second"
+				},
+				"detailTab": {
+					"viewType": "XML",
+					"viewName": "detailProduct"
+				},
+				"NotFound": {
+					"viewType": "XML",
+					"viewName": "NotFound"
+				},
+				"supplierDetailTab": {
+						"parent": "detailTab",
+						"viewId": "supplierDetail",
+						"viewPath": "demo.route.demoRouteList.view",
+						"viewName": "supplierDetail",
+						"controlId": "idPatnerTab",
+						"controlAggregation": "content"
+					}
+			}
+		}
+	}
+}

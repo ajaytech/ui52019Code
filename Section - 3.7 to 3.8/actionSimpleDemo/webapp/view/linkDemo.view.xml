@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="demo.action.simple.actionSimpleDemo.controller.linkDemo" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<Link 
+					text="Demo" 
+					press="handleLinkPress"
+					target="_blank" 
+					href="http://www.ui5cn.com"
+					/>
+					<Link 
+					text="Demo" 
+					press="handleLinkPress"
+					href="http://www.ui5cn.com"
+					/>
+					<Link text="Disabled link" enabled="false"/>
+					</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,18 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:core="sap.ui.core"
+	controllerName="demo.cont2.demoCont2.controller.first" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+							<Button id="buttonBack" enabled="false" text="Navigate Back" press="onButtonBackClick" class="sapUiSmallMarginBottom"></Button>
+							<core:Fragment fragmentName="demo.cont2.demoCont2.fragment.qvFragment" type="XML"/>
+					</content>
+					</Page>
+				</pages>
+			</App>
+		</Shell>
+	</mvc:View>

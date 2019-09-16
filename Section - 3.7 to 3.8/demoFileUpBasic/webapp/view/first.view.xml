@@ -1,0 +1,25 @@
+<mvc:View controllerName="demo.fileUpBasic.demoFileUpBasic.controller.first" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true"
+xmlns="sap.m"
+xmlns:u="sap.ui.unified">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<u:FileUploader 
+						id="fileUploader"
+						name="myFileUpload"
+						uploadUrl=""
+						/>
+						<Button 
+						text="Upload"
+						press="onPressUpload"/>
+							
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

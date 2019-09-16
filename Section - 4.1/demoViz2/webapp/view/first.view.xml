@@ -1,0 +1,62 @@
+<mvc:View controllerName="demo.viz1.demoViz2.controller.first" 
+xmlns:mvc="sap.ui.core.mvc"
+xmlns:viz="sap.viz.ui5.controls"
+xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+xmlns:viz.data="sap.viz.ui5.data"
+xmlns:layout="sap.ui.layout"
+displayBlock="true" xmlns="sap.m">
+	<layout:FixFlex id="idChart" minFlexSize="250">
+		
+		<layout:flexContent>
+			<viz:VizFrame id="idVizFrame" 
+			height="100%"
+			width="100%"
+			vizType="column"
+			vizProperties="{/vizproperties}">
+		
+			<viz:dataset>
+				<viz.data:FlattenedDataset data="{/dataTime}">
+					 <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="Date"
+                                value="{Date}" dataType="date"/>
+                        </viz.data:dimensions>
+					<viz.data:measures>
+					
+						<viz.data:MeasureDefinition	
+						name="Cost"
+						value="{Cost}"
+						/>
+					<!--	<viz.data:MeasureDefinition	
+						name="TeamSize"
+						value="{TeamSize}"
+						/>
+						<viz.data:MeasureDefinition	
+						name="Rating"
+						value="{Rating}"
+						/>-->
+					</viz.data:measures>
+				</viz.data:FlattenedDataset>
+			
+			</viz:dataset>
+			
+			<viz:feeds>
+				<viz.feeds:FeedItem	uid="valueAxis" type="Measure"
+				values="Cost"/>
+				<viz.feeds:FeedItem	uid="categoryAxis" type="Dimension"
+				values="Date"/>
+				<!--<viz.feeds:FeedItem	uid="valueAxis2" type="Measure"
+				values="TeamSize"/>-->
+				
+			</viz:feeds>
+		
+		
+			</viz:VizFrame>
+		
+		
+		</layout:flexContent>		
+		
+	</layout:FixFlex>	
+	
+	
+	
+</mvc:View>

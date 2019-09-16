@@ -1,0 +1,58 @@
+<mvc:View controllerName="demo.list.demoList1.controller.first" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<subHeader>
+						<Toolbar>
+							<SearchField 
+								width="50%"
+								liveChange="onLiveChangeListPage"
+								/>
+						</Toolbar>
+					</subHeader>
+					<content>
+						<List 
+						id="idList" 
+						selectionChange="onSelectionChange"
+						mode="MultiSelect"
+						itemPress="onItemPress"
+						items="{listData>/ProductCollection}">
+						<!--	<StandardListItem 
+							type="{listData>type}" 
+											 title="{listData>title}" />-->
+						<ObjectListItem
+						title="{listData>Name}"
+						number="{listData>WeightMeasure}"
+						numberUnit="{listData>WeightUnit}"
+						type="Active">
+							<attributes>
+								<ObjectAttribute text="{listData>ProductId}"/>
+								<ObjectAttribute text="{
+										parts:[
+												{path:'listData>Description'},
+												{path:'listData>Quantity'}
+												],
+										formatter:'.formatterABC.changeDescAddQunatit'
+										}"/>
+							</attributes>
+							<firstStatus>
+								<ObjectStatus
+								text="{listData>Quantity}"
+								state="None"/>
+							</firstStatus>
+							<secondStatus>
+								<ObjectStatus
+								text="{listData>DateOfSale}"
+								state="None"/>
+							</secondStatus>
+						</ObjectListItem>
+						
+						</List>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

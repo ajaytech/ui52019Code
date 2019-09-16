@@ -1,0 +1,14 @@
+<mvc:View
+	controllerName="sap.ui.demo.smartControls.SmartFieldWithValueHelp"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:smartField="sap.ui.comp.smartfield">
+	<form:SimpleForm
+		class="editableForm">
+		<form:content>
+			<smartField:SmartField value="{ProductId}"/>
+
+		</form:content>
+	</form:SimpleForm>
+</mvc:View>

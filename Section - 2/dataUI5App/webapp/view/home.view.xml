@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.ui5.dataUI5App.controller.home" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Demo App V2">
+					<content>
+						<List items="{path:'listTodo>/', factory:'.factoryFunction'}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="User List"/>
+								</Toolbar>
+							</headerToolbar>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</Shell>
+</mvc:View>

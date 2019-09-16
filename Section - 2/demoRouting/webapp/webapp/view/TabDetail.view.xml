@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="CustomMastertoDetail.CustomMastertoDetail.controller.TabDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title" 	showNavButton="true"
+		navButtonPress=".onNavBack">
+				<content>
+				<IconTabBar
+				id="iconTabBar"
+				headerBackgroundDesign="Transparent"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter id="infoTab" text="{i18n>tabInfo}" >
+						<Text text="{Information}"/>
+					</IconTabFilter>
+					<IconTabFilter id="projectsTab" text="{i18n>tabProjects}" >
+						<!--<mvc:XMLView viewName="CustomMastertoDetail.CustomMastertoDetail.view.ResumeProjects"></mvc:XMLView>-->
+					</IconTabFilter>
+					<IconTabFilter id="hobbiesTab" text="{i18n>tabHobbies}" >
+						<!-- place content via lazy loading -->
+					</IconTabFilter>
+					<IconTabFilter id="notesTab" text="{i18n>tabNotes}" >
+						<!-- place content via lazy loading -->
+					</IconTabFilter>
+				</items>
+			</IconTabBar>	
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

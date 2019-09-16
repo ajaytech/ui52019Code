@@ -1,0 +1,39 @@
+<mvc:View controllerName="demo.grid.demoGrid.controller.first" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:grid="sap.ui.layout.cssgrid" displayBlock="true">
+	<l:VerticalLayout id="containerLayout" width="100%">
+		<l:BlockLayout id="BlockLayout">
+			<l:BlockLayoutRow accentCells="Accent1">
+				<l:BlockLayoutCell id="Accent1" width="2" title="Left aligned heading">
+					<Text
+						text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+					<RadioButtonGroup columns="2" selectedIndex="2" class="sapUiMediumMarginTop">
+						<buttons>
+							<RadioButton id="RB2-1" text="Option 1"/>
+							<RadioButton id="RB2-2" text="Option 2" editable="false"/>
+							<RadioButton id="RB2-3" text="Option 3"/>
+						</buttons>
+					</RadioButtonGroup>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell title="25% width cell">
+					<Text
+						text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+	</l:VerticalLayout>
+	<grid:CSSGrid id="grid1" gridTemplateColumns="1fr 1fr" gridTemplateRows="50px 50px 100px" gridGap="1rem">
+		<grid:items>
+			<core:HTML content='&lt;header class=&quot;stylePageLayout&quot;&gt;Header&lt;/header&gt;'></core:HTML>
+			<core:HTML content='&lt;aside class=&quot;stylePageLayout&quot;&gt;Navigation&lt;/aside &gt;'></core:HTML>
+			<core:HTML content='&lt;article class=&quot;stylePageLayout&quot;&gt;Main Content&lt;/article&gt;'></core:HTML>
+			<core:HTML content='&lt;aside class=&quot;stylePageLayout&quot;&gt;Related Links&lt;/article&gt;'></core:HTML>
+			<core:HTML content='&lt;footer class=&quot;stylePageLayout&quot;&gt;Footer&lt;/footer&gt;'></core:HTML>
+		<grid:CSSGrid id="grid2" gridTemplateColumns="1fr 1fr" gridTemplateRows="50px 50px" gridGap="1rem">
+				<core:HTML content='&lt;aside class=&quot;stylePageLayout&quot;&gt;Navigation&lt;/aside &gt;'></core:HTML>
+				<core:HTML content='&lt;article class=&quot;stylePageLayout&quot;&gt;Main Content&lt;/article&gt;'></core:HTML>
+				<core:HTML content='&lt;aside class=&quot;stylePageLayout&quot;&gt;Related Links&lt;/article&gt;'></core:HTML>
+				<core:HTML content='&lt;footer class=&quot;stylePageLayout&quot;&gt;Footer&lt;/footer&gt;'></core:HTML>
+		</grid:CSSGrid>
+	</grid:items>
+</grid:CSSGrid>
+</mvc:View>

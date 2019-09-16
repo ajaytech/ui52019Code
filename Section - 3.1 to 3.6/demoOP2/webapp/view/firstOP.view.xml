@@ -1,0 +1,59 @@
+<mvc:View controllerName="demo.op2.demoOP2.controller.firstOP" 
+xmlns:core="sap.ui.core" 
+xmlns:f="sap.ui.layout.form" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.uxap"
+xmlns:custForm="demo.op2.demoOP2.forms"
+xmlns:layout="sap.ui.layout" xmlns:m="sap.m">
+	<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" showTitleInHeaderContent="true" showEditHeaderButton="true">
+		<headerTitle>
+			<ObjectPageHeader objectImageURI="https://s3.amazonaws.com/thinkific/file_uploads/17035/images/1f3/ada/522/new-logo.png"
+				objectTitle="Demo UI5CN" objectImageShape="Circle" objectImageAlt="Demo Name" objectSubtitle="Senior UI Developer"
+				isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="false" isObjectSubtitleAlwaysVisible="false">
+				<actions>
+					<ObjectPageHeaderActionButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://show" text="show state" tooltip="show"/>
+					<ObjectPageHeaderActionButton text="Toggle Footer" hideIcon="true" hideText="false" press="toggleFooter"/>
+				</actions>
+				<breadcrumbs>
+					<m:Breadcrumbs id="breadcrumbsId" currentLocationText="Object Page Example">
+						<m:Link text="Page 1 a very long link" press="handleLink1Press"/>
+						<m:Link text="Page 2 long link" press="handleLink2Press"/>
+					</m:Breadcrumbs>
+				</breadcrumbs>
+			</ObjectPageHeader>
+		</headerTitle>
+		<headerContent>
+			<m:HBox>
+				<m:VBox height="63px">
+					<m:Label text="Achieved goals"/>
+					<m:ProgressIndicator percentValue="30" displayValue="30%" showValue="true" state="None"/>
+				</m:VBox>
+				<m:VBox height="63px">
+					<m:Label text="Achieved goals"/>
+					<m:ProgressIndicator percentValue="30" displayValue="30%" showValue="true" state="None"/>
+				</m:VBox>
+			</m:HBox>
+		</headerContent>
+		<sections>
+			<ObjectPageSection id="goalsSection" title="Block 1">
+				<subSections>
+					<ObjectPageSubSection id="goalsSectionSS1" title=" ">
+						<blocks>
+							<custForm:formSimple1 />
+							<custForm:formSimple1 />
+							<custForm:formSimple1 />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+		<footer>
+			<m:OverflowToolbar>
+				<m:ToolbarSpacer />
+				<m:Button type="Accept" text="Accept"/>
+				<m:Button type="Reject" text="Reject"/>
+			</m:OverflowToolbar>
+		</footer>
+	</ObjectPageLayout>
+</mvc:View>

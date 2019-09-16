@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="demo.action.simple.actionSimpleDemo.controller.button" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Button">
+				<content>
+						<Button type="Transparent" press="onPressButton" text="Go To Button"/>
+						<Button icon="sap-icon://accept" type="Transparent" press="onPress" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

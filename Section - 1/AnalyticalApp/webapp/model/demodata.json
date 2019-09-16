@@ -1,0 +1,43 @@
+{"title":"Planned vs Actual",
+  "viztype":"stacked_column",
+  "vizproperties":{
+  	"title":{
+  		"text":"Planned vs Actual"
+  		
+  	}
+  },
+  "tilesPrediction":[
+  {
+    "header": "Jan",
+    "subheader": "Result",
+    "footer": "Status",
+    "value": "0",
+    "valueColor": "Error",
+    "indicator": "Down"
+  },
+  {
+    "header": "Feb",
+    "subheader": "Result",
+    "footer": "Status",
+    "scale": "%",
+    "value": "0",
+    "valueColor": "Good",
+    "indicator": "Up"
+  },
+  {
+    "header": "March",
+    "subheader": "Result",
+    "footer": "Status",
+    "scale": "%",
+    "value": "0",
+    "valueColor": "Good",
+    "indicator": "Up"
+  }
+]
+,
+  "data":[{"month":"Jan-2019","plncost":"4000","actcost":"5000","varcost":"-1000"},{"month":"Feb-2019","plncost":"4000","actcost":"2000","varcost":"2000"},{"month":"Mar-2019","plncost":"4000","actcost":"3000","varcost":"1000"}],
+  "feeds":[{"type":"Dimension","uid":"categoryAxis","values":"Period"},{"type":"Measure","uid":"valueAxis","values":"Plan"},{"type":"Measure","uid":"valueAxis","values":"Actual"},{"type":"Measure","uid":"valueAxis","values":"Variance"}],
+  "dimensions":[{"name":"Period","value":"month"}],
+  "measures":[{"name":"Plan","value":"plncost"},{"name":"Actual","value":"actcost"},{"name":"Variance","value":"varcost"}],
+  "tabledefinition":[{"name":"Period","value":"month","align":"Left"},{"name":"Actual","value":"actcost","align":"Right"},{"name":"Plan","value":"plncost","align":"Right"},{"name":"Variance","value":"varcost","align":"Right"}]
+ }

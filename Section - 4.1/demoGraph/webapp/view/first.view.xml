@@ -1,0 +1,74 @@
+<mvc:View controllerName="graph.demo.demoGraph.controller.first" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" 
+xmlns:m="sap.m"
+xmlns:l="sap.suite.ui.commons.networkgraph.layout"
+xmlns="sap.suite.ui.commons.networkgraph">
+	<Graph
+	nodes="{/nodes}"
+	lines="{/lines}"
+	groups="{/groups}"
+	>
+		<statuses>
+			<Status
+			key="food"
+			borderColor="green"
+			borderStyle="3,3"
+			borderWidth="2px"
+			contentColor="red"
+			title="Status Title Food">
+				
+			</Status>
+			
+			<Status
+			key="Animal"
+			backgroundColor="yellow"
+			title="Status Title Food">
+				
+			</Status>
+		</statuses>
+	<groups>
+		<Group
+		key="{key}"
+		title="{title}"
+		status="{status}">
+		
+		</Group>
+	</groups>
+	<nodes>
+		<Node
+		key="{key}"
+		group="{group}"
+		title="{title}"	
+		icon="{icon}"
+		status="{status}"
+		shape="{shape}"
+		attributes="{
+		path:'attributes',
+		templateShareable:true
+		}"
+		>
+			
+			<attributes>
+				<ElementAttribute	
+				label="{label}"
+				value="{value}"/>
+				
+			</attributes>
+		</Node>
+		
+	</nodes>
+	
+	<lines>
+		<Line 
+		from="{from}"
+		to="{to}"
+		status="{status}"/>
+	
+	</lines>
+	
+	
+	</Graph>
+	
+
+</mvc:View>

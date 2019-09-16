@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.route.demoRouteList.controller.second"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Second">
+				<content>
+					<Label text="{ProductName}" />
+					<Label text="{UnitPrice}" />
+					<Label text="{UnitsInStock}" />
+					<Link text="know More Details" press=".onDetailLinkClick"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

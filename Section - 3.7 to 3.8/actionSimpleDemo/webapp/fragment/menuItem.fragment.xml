@@ -1,0 +1,34 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified">
+	<u:Menu>
+		<u:MenuItem
+			text="A"
+			icon="sap-icon://add"
+			select="handleMenuItemPress"/>
+		<u:MenuItem
+			text="B"
+			select="handleMenuItemPress"/>
+		<u:MenuItem
+			text="C"
+			select="handleMenuItemPress">
+			<u:Menu>
+				<u:MenuItem
+					text="C1"
+					select="handleMenuItemPress"/>
+				<u:MenuItem
+				text="C2"
+				enabled="false"
+				select="handleMenuItemPress"/>
+			</u:Menu>
+		</u:MenuItem>
+		<u:MenuTextFieldItem
+			text="D"
+			icon="sap-icon://add"
+			select="handleMenuItemPress"/>
+			
+	</u:Menu>
+
+
+</core:FragmentDefinition>

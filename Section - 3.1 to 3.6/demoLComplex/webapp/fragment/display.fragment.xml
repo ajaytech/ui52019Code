@@ -1,0 +1,43 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<VBox>
+		<form:Form editable="true" id="formd0">
+			<form:title>
+				<core:Title text="Address"/>
+			</form:title>
+			<form:formContainers>
+				<form:FormContainer title="Something" id="containerd1">
+					<form:formElements>
+						<form:FormElement id="elementd1" label="Something">
+							<form:fields>
+								<Text text="ABC"/>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement id="elementd2" label="Something New">
+							<form:fields>
+								<Text text="ABC1"/>
+							</form:fields>
+						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+				<form:FormContainer title="Nothing" id="containerd2">
+					<form:formElements>
+						<form:FormElement id="elementd3" label="Nothing">
+							<form:fields>
+								<Text text="ABC2"/>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement id="elementd4" label="Nothing New">
+							<form:fields>
+								<Text text="ABC3"/>
+							</form:fields>
+						</form:FormElement>
+					</form:formElements>
+				</form:FormContainer>
+			</form:formContainers>
+			<form:layout>
+				<form:ResponsiveGridLayout columnsXL="4" columnsL="2" columnsM="2" labelSpanXL="6" labelSpanL="4" labelSpanM="12" emptySpanXL="2"
+					emptySpanL="4" emptySpanM="4" emptySpanS="0" id="layoutd0"/>
+			</form:layout>
+		</form:Form>
+	</VBox>
+</core:FragmentDefinition>

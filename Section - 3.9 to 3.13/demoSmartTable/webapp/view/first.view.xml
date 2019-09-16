@@ -1,0 +1,38 @@
+<mvc:View 
+controllerName="demo.smartTable.demoSmartTable.controller.first" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:smartTable="sap.ui.comp.smarttable"
+xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+displayBlock="true" xmlns="sap.m">
+						<smartFilterBar:SmartFilterBar
+							id="idSmartFilter"
+							entitySet="Products"
+							persistencyKey="keySmartTable"
+							>
+						<smartFilterBar:controlConfiguration>
+							<smartFilterBar:ControlConfiguration
+								key="Category"
+								visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false">
+								
+							</smartFilterBar:ControlConfiguration>
+						</smartFilterBar:controlConfiguration>
+							
+						</smartFilterBar:SmartFilterBar>
+						
+						<smartTable:SmartTable
+							useVariantManagement="true"
+							persistencyKey="keySmartTable"
+							smartFilterId="idSmartFilter"
+							entitySet="Products"
+							tableType="Table"
+							editable="false"
+							enableAutoBinding="true"
+							header="ProductInfo"
+							showRowCount="true"
+							useExportToExcel="true"
+							beforeExport="excelBeforeExport"
+						>
+						</smartTable:SmartTable>
+				
+</mvc:View>

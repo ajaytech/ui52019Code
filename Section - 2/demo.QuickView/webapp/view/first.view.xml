@@ -1,0 +1,18 @@
+<mvc:View 
+controllerName="demo.QV.demo.QuickView.controller.first" 
+xmlns:core="sap.ui.core"
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Button id="buttonBack" enabled="false" text="Navigate Back" press="onButtonBackClick" class="sapUiSmallMarginBottom"></Button>
+						<core:Fragment fragmentName="demo.QV.demo.QuickView.fragment.qvPageTemplate" type="XML"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

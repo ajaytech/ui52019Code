@@ -1,0 +1,35 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.38.21"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/bpmrulesruntime/rules-service",
+      "target": {
+        "type": "destination",
+        "name": "bpmrulesruntime",
+        "entryPath": "/rules-service"
+      },
+      "description": "CP Business Rules"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources",
+        "version": "1.38.21"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}

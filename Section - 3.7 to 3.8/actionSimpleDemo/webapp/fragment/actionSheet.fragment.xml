@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified">
+<ActionSheet
+	placement="Bottom"
+	title="Demo Actions">
+		<Button text="Action 1"/>
+		<Button text="Action 2"/>
+		<Button text="Action 3"/>
+		<Button text="Action 4"/>
+</ActionSheet>
+
+</core:FragmentDefinition>

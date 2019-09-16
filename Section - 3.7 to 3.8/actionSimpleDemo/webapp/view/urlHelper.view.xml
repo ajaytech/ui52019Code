@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="demo.action.simple.actionSimpleDemo.controller.urlHelper" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<Button type="Transparent" press="onCall" text="Call"/>
+					<Button type="Transparent" press="onEmail" text="Send Email"/>
+					<Button type="Transparent" press="onSMS" text="Send SMS"/>
+					<Button type="Transparent" press="onRedirect" text="Redirect"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

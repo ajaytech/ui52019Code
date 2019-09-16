@@ -1,0 +1,27 @@
+<mvc:View controllerName="demo.ls.demoLS.controller.first" 
+xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" displayBlock="true" 
+xmlns="sap.m"
+xmlns:m="sap.m">
+	<Shell id="shell">
+		<m:App id="app">
+			<m:pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<f:GridList id="gridList" headerText="GridList header" items="{ path: '/' }">
+							<CustomListItem>
+								<VBox height="100%">
+									<VBox class="sapUiSmallMargin">
+										<layoutData>
+											<FlexItemData growFactor="1" shrinkFactor="0"/><!-- Don't shrink below minimum size. Fill space if available. --></layoutData>
+										<Title text="{title}" wrapping="true"/>
+										<Label text="{subtitle}" wrapping="true"/>
+									</VBox>
+								</VBox>
+							</CustomListItem>
+						</f:GridList>
+					</content>
+				</Page>
+			</m:pages>
+		</m:App>
+	</Shell>
+</mvc:View>

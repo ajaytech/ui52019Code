@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.action.comp.demoActionComp.controller.first" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<PullToRefresh
+							id="idRefreshOnClick"
+							refresh="onRefresh"/>
+					<List noDataText="Drop list items here" id="list0"
+					items="{/ProductCollection}">
+					    <items>
+					        <StandardListItem 
+						        type="Navigation" 
+						        title="{Name}" 
+						        description="{ProductId}" 
+						        />
+					    </items>
+					</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

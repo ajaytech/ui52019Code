@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="CustomMastertoDetail.CustomMastertoDetail.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{i18n>DetailTitle}" showNavButton="true" navButtonPress="handleNavButtonPress">
+		<Link text="{i18n>FlipTodetail}" press=".onShowResume"/>
+		<content>
+			<VBox>
+				<Text text="ProductName:"/>
+				<Text text="{ProductName}"/>
+				<Text text="QuantityPerUnit:"/>
+				<Text text="{QuantityPerUnit}"/>
+				<Text text="UnitPrice:"/>
+				<Text text="{UnitPrice}"/>
+				<Text text="UnitsInStock:"/>
+				<Text text="{UnitsInStock}"/>
+				<Text text="Discontinued:"/>
+				<Text text="{Discontinued}"/>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

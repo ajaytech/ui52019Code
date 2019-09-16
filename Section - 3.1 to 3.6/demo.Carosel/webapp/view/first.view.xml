@@ -1,0 +1,23 @@
+<mvc:View controllerName="demo.carosel.demo.Carosel.controller.first" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Carousel class="sapUiContentPadding" 
+						loop="true"
+						width="40%"
+						height="40%">
+							<pages>
+								<Image src="https://thinkific-import.s3.amazonaws.com/17035/yVyXDxkZQGqAMG0IrwWj_CDS-Course-Card-Image.jpg" alt="Course"/>
+								<Image src="https://thinkific-import.s3.amazonaws.com/17035/3fPGa4FRoG8g3kMXnNTi_New-Abap-on-HANA-Image.jpg" alt="Example picture of USB flash drive"/>
+								<Image src="https://thinkific-import.s3.amazonaws.com/17035/3fPGa4FRoG8g3kMXnNTi_New-Abap-on-HANA-Image.jpg" alt="Example picture of spotlight"/>
+								<Image src="https://thinkific-import.s3.amazonaws.com/17035/kFBRErh3SO2wT9HRb6BH_original-SAPUI5-2019-PRofessional-Development.jpg" alt="Example picture of screw"/>
+							</pages>
+						</Carousel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
