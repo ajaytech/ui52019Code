@@ -3,7 +3,7 @@ UI5CN UI5 2019 Course
 https://www.ui5cn.com/courses/sapui5-professional-development-2019/
 
 <a href="https://www.ui5cn.com/courses/sapui5-professional-development-2019/" target="_blank">
-<img src="https://www.ui5cn.com/courses/sap-cloud-platform-professional-development"></img>
+<img src="https://thinkific-import.s3.amazonaws.com/17035/Ieao7C5YQOq5YiDdQyht_scp-professional-devimage.jpg"></img>
 </a>
 
 # Desc
